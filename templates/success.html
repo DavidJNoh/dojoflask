@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+        h1{
+            text-decoration: black;
+        }
+        .shit{
+            height:600px;
+            width:800px;
+            text-align: center;
+        }
+        p{
+            display: inline-block;
+        }
+
+        </style>
+        
+    </head>
+    <body>
+        <h1>Submitted Info</h1>
+        <div class=shit>
+            <div class=what>
+            <p>Name:</p>
+            <p>{{ request.form['name'] }}</p>
+            </div>
+            <div class=whate>
+                <p>Dojo Location:</p>
+                <p>{{ request.form['location'] }}</p>
+            </div>
+            <div class=whate>
+                <p>Favorite Language:</p>
+                <p>{{ request.form['language'] }}</p>
+            </div>
+            <div class=whate>
+                <p>Comment:</p>
+                <p>{{ request.form['comment'] }}</p>
+            </div>
+        </div>>
+    </body>
+</html>
